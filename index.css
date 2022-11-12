@@ -115,6 +115,11 @@ select {
     font: inherit;
 }
 
+a {
+    text-decoration: none;
+    /* no underline */
+}
+
 /* remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
 
@@ -540,6 +545,31 @@ nav>ul {
     padding-block-end: 1rem;
 }
 
+.grid-container--contact {
+    grid-template-rows:
+        1fr;
+    grid-template-columns:
+        1fr;
+}
+
+.grid-container--contact-info {
+    grid-template-rows:
+        repeat(8, 6rem);
+    grid-template-columns:
+        30rem;
+    grid-template-areas:
+        'media-1'
+        '.'
+        'media-2'
+        '.'
+        'media-3'
+        '.'
+        'media-4'
+        '.'
+    ;
+
+}
+
 @media (min-width: 35em) {
     nav {
         position: static;
@@ -628,6 +658,47 @@ nav>ul {
     .about-item:nth-of-type(3) {
         margin-block-start: -20rem;
     }
+
+    .media-1 {
+        grid-area: media-1;
+    }
+
+    .media-2 {
+        grid-area: media-2;
+    }
+
+    .media-3 {
+        grid-area: media-3;
+    }
+
+    .media-4 {
+        grid-area: media-4;
+    }
+
+    .grid-container--contact-info>p{
+        justify-self: flex-start;
+    }
+
+    .grid-container--contact {
+        grid-template-rows:
+            1fr;
+        grid-template-columns:
+            1fr;
+    }
+
+    .grid-container--contact-info {
+        grid-template-rows:
+            repeat(4, 6rem);
+        grid-template-columns:
+            20rem 30rem;
+        grid-template-areas:
+            'media-1 .'
+            'media-2 .'
+            'media-3 .'
+            'media-4 .'
+        ;
+    }
+
 }
 
 @media (min-width: 45em) {
@@ -680,6 +751,4 @@ nav>ul {
         left: 15rem;
         background-color: white;
     }
-
-
 }
