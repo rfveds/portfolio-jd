@@ -117,8 +117,20 @@ select {
 
 a {
     text-decoration: none;
-    /* no underline */
 }
+
+a:link {
+    color: hsl(var(--clr-main));
+}
+
+a:visited {
+    color: hsl(var(--clr-main) / .5);
+}
+
+a:hover {
+    color: hsl(var(--clr-dark) / .75);
+}
+
 
 /* remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
@@ -675,7 +687,7 @@ nav>ul {
         grid-area: media-4;
     }
 
-    .grid-container--contact-info>p{
+    .grid-container--contact-info>p {
         justify-self: flex-start;
     }
 
