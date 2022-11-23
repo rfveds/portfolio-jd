@@ -13,12 +13,12 @@
 * [Contact](#contact)
 
 ## General Information
-- Portfolo website created for an artist.
+- Portfolo website created for an artist. Layouts mostly done using grid with Responsive Web Design standards.
 
 ## Technologies Used
 - HTML
 - JavaScript
-- CSS
+- CSS 
  
 ## Setup
 To run this project copy repository and open index.html
