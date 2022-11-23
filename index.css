@@ -131,10 +131,6 @@ a:hover {
     color: hsl(var(--clr-dark) / .75);
 }
 
-button{
-    
-}
-
 /* remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
 
@@ -428,6 +424,24 @@ nav>ul {
 
 }
 
+.container-content {
+    grid-area: content;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 1rem;
+    padding: 2rem;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 @media (min-width: 35em) {
     nav {
         padding-block-end: 0;
@@ -447,6 +461,15 @@ nav>ul {
         padding-block-end: 0;
         margin-block-end: 0;
     }
+
+    .container-content {
+        padding-inline-end: 1rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+    }
 }
 
 @media (min-width: 45em) {
@@ -457,6 +480,10 @@ nav>ul {
     .primary-header {
         padding-inline: 3rem;
         padding-block-start: 1rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
