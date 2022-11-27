@@ -17,7 +17,7 @@
 
 ## Live Version
 - Slightly modified version made as wordpress theme for easy image uploads.
-  [joannaduma.art](https://https://joannaduma.art/)
+  [joannaduma.art](joannaduma.art/)
 
 ## Technologies Used
 - HTML
