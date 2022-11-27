@@ -4,7 +4,7 @@
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 <!-- * [Features](#features) -->
-<!-- * [Screenshots](#screenshots) -->
+* [Live Version](#live)
 * [Setup](#setup)
 <!-- * [Usage](#usage) -->
 * [Project Status](#project-status)
@@ -14,6 +14,10 @@
 
 ## General Information
 - Portfolo website created for an artist. Layouts mostly done using grid with Responsive Web Design standards.
+
+## Live Version
+- Slightly modified version made as wordpress theme for easy image uploads.
+  [joannaduma.art](https://https://joannaduma.art/)
 
 ## Technologies Used
 - HTML
@@ -30,9 +34,6 @@ Project is: in_progress
 <!-- Include areas you believe need improvement / could be improved. Also add TODOs for future development. -->
 Room for improvement:
 - Clean CSS
-To do:
-- Zooming images
-- Some animations
 
 ## Contact
 Created by Karol Kijowski
